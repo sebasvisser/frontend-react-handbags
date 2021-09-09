@@ -26,7 +26,7 @@ function App() {
       <>
           <h1>Handbags & Purses</h1>
           <nav>
-              <Buttonclick>123 to the collection</Buttonclick>
+              <Buttonclick>to the collection</Buttonclick>
               <Buttonclick>shop all bags</Buttonclick>
               <Buttonclick disabled={true}>pre-orders</Buttonclick>
           </nav>
@@ -37,16 +37,19 @@ function App() {
               <Products image={bag4} spanner={"New collection"} src={bag4} price={"€150,-"}>The trendy bag</Products>
           </main>
           <footer>
-              <Tile paraone={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} paratwo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} header={"the brand"} />
+              <Tile header={"the brand"}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+              </Tile>
               <Tile altimage={"The Brand"} imagesrc={brand} />
               <Tile altimage={"Our story"} imagesrc={story} />
-              <Tile paraone={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} paratwo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} header={"our story"} />
+              <Tile header={"our story"}>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt.</p>
+              </Tile>
           </footer>
       </>
   );
 }
 
 export default App;
-
-
-

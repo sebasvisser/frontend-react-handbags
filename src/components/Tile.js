@@ -4,13 +4,12 @@ function Tile(props) {
             <section>
                 <img alt={props.altimage} src={props.imagesrc}/>
             </section>
-        )
+        );
     } else {
         return (
             <section>
                 <h2>{props.header}</h2>
-                <p>{props.paraone}</p>
-                <p>{props.paratwo}</p>
+                <>{props.children}</>
             </section>
         );
     }
