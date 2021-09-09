@@ -3,6 +3,11 @@ import React
 import './App.css';
 import Buttonclick
     from "./components/Buttonclick";
+import Products
+    from "./components/Products";
+import Tile
+    from "./components/Tile";
+// image imports, because why?
 import bag1
     from "./assets/bag_1.png";
 import bag2
@@ -11,8 +16,10 @@ import bag3
     from "./assets/bag_3.png";
 import bag4
     from "./assets/bag_4.png";
-import Products
-    from "./components/Products";
+import brand
+    from "./assets/brand.png";
+import story
+    from "./assets/our_story.png";
 
 function App() {
   return (
@@ -29,6 +36,12 @@ function App() {
               <Products image={bag3} spanner={"New collection"} src={bag3} price={"€300,-"}>The simple bag</Products>
               <Products image={bag4} spanner={"New collection"} src={bag4} price={"€150,-"}>The trendy bag</Products>
           </main>
+          <footer>
+              <Tile paraone={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} paratwo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} header={"the brand"} />
+              <Tile altimage={"The Brand"} imagesrc={brand} />
+              <Tile altimage={"Our story"} imagesrc={story} />
+              <Tile paraone={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} paratwo={"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquid culpa dolorum enim excepturi, fuga pariatur praesentium quia sequi similique sunt."} header={"our story"} />
+          </footer>
       </>
   );
 }
