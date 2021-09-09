@@ -11,6 +11,8 @@ import bag3
     from "./assets/bag_3.png";
 import bag4
     from "./assets/bag_4.png";
+import Articles
+    from "./components/Articles";
 
 function App() {
   return (
@@ -22,30 +24,10 @@ function App() {
               <Buttonclick disabled={true}>pre-orders</Buttonclick>
           </nav>
           <main>
-              <article>
-                  <span>Best seller</span>
-                  <img alt="The handy bag" src={bag1} />
-                  <p>The handy bag</p>
-                  <h4>400,-</h4>
-              </article>
-              <article>
-                  <span>Best seller</span>
-                  <img alt="The stylish bag" src={bag2}/>
-                  <p>The stylish bag</p>
-                  <h4>250,-</h4>
-              </article>
-              <article>
-                  <span>New collection</span>
-                  <img alt="The simple bag" src={bag3}/>
-                  <p>The simple bag</p>
-                  <h4>300,-</h4>
-              </article>
-              <article>
-                  <span>New collection</span>
-                  <img alt="The trendy bag" src={bag4}/>
-                  <p>The trendy bag</p>
-                  <h4>150,-</h4>
-              </article>
+              <Articles image={bag1} spanner={"Best seller"} price={"€400,-"}>The handy bag</Articles>
+              <Articles image={bag2} spanner={"Best seller"} src={bag2} price={"€250,-"}>The stylish bag</Articles>
+              <Articles image={bag3} spanner={"New collection"} src={bag3} price={"€300,-"}>The simple bag</Articles>
+              <Articles image={bag4} spanner={"New collection"} src={bag4} price={"€150,-"}>The trendy bag</Articles>
           </main>
       </>
   );
