@@ -1,5 +1,5 @@
 
-function Articles(props) {
+function Products(props) {
     return (
         <article>
             <span>{props.spanner}</span>
@@ -10,4 +10,4 @@ function Articles(props) {
     );
 }
 
-export default Articles;
+export default Products;
